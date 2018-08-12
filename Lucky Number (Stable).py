@@ -1,0 +1,75 @@
+import time
+import os
+import platform
+import sys
+import string
+from builtins import input
+import random
+import datetime
+
+opsys = platform.system()
+
+#clears output
+def clear():
+	if opsys == 'Linux':
+		os.system('clear')
+	elif opsys == 'Windows':
+		os.system('cls')
+
+def restart():
+	os.system('python program.py')
+		
+	
+clear()
+print('Hello and Welcome to the "Lucky Number Game"')
+print('\n v1.0.1')
+total = 0
+time.sleep(3)
+clear()
+ready = input('Are you Ready to play the game? \n \n')
+assert isinstance(ready,str)
+#Begining of Game
+
+if "y" in ready.lower():
+	clear()
+	name = input('What is your name? \n \n')
+	assert isinstance(name,str)
+	clear()
+	print('Hello, ' + string.capwords(name))
+	if len(name) > 5:
+		total += random.randint(1,100)
+	else:
+		total += random.randint(0,5)
+	movie = input("(1/3)What is your favorite movie?" + '\n \n')
+	assert isinstance(movie,str)
+	total += random.randint(1,30)
+	clear()
+	color = input('(2/3)What is your favorite color?' + '\n \n')
+	assert isinstance(color,str)
+	clear()
+	if color.lower() == "blue":
+		print('I love the color Blue!')
+		total += random.randint(2,19)
+		time.sleep(2)
+	else:
+		print("Ahhh %s... That's a nice color..." % (color))
+		total -= 5
+		time.sleep(2)
+	clear()
+	place = input('(3/3)What Fictional City Would you Like to Visit? \n \n')
+	assert isinstance(place,str)
+	total += random.randint(1,20)
+	main()
+	
+	
+#Don't code below this line... Code is a dead-end past this line
+elif "n" in ready.lower():
+	clear()
+	print('Fine. have it your way')
+	time.sleep(2)
+	clear()
+	exit()
+else:
+	print('Invalid response detected... Exiting...')
+	
+	
