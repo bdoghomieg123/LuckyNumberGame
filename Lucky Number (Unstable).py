@@ -60,7 +60,7 @@ def mainprogram():
 #Asks user if they want to play the game
 def intro():
 	clear()
-	print('Beta version:\n1.01\n\nIf you notice a bug, fill out an Issue report on my Github\n')
+	print('Beta version:\n1.01.0\n\nIf you notice a bug, fill out an Issue report on my Github\n')
 	input('***Press any key to continue...***')
 	clear()
 	print('Hello and Welcome to the "Lucky Number Game"')
