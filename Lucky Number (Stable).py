@@ -31,6 +31,7 @@ clear()
 ready = input('Are you Ready to play the game? \n \n')
 #Begining of Game
 
+
 if "y" in ready.lower():
 	clear()
 	name = input('What is your name? \n \n')
