@@ -21,7 +21,6 @@ def mainprogram():
 	clear()
 	total = 0
 	name = input('What is your name?\n \n')
-	assert isinstance(name,str)
 	clear()
 	print('Hello, ' + string.capwords(name))
 	if len(name) > 5:
@@ -29,11 +28,9 @@ def mainprogram():
 	else:
 		total += random.randint(0,5)
 	movie = input("(1/4)What is your favorite movie?" + '\n \n')
-	assert isinstance(movie,str)
 	total += random.randint(1,30)
 	clear()
 	color = input('(2/4)What is your favorite color?' + '\n \n')
-	assert isinstance(color,str)
 	clear()
 	if color.lower() == "blue":
 		print('I love the color Blue!')
@@ -45,11 +42,9 @@ def mainprogram():
 		time.sleep(2)
 	clear()
 	place = input('(3/4)What Fictional City Would you Like to Visit? \n \n')
-	assert isinstance(place,str)
 	total += random.randint(1,20)
 	clear()
 	phone = input('(4/4)Which do you like better: Apple or Android? \n \n')
-	assert isinstance(phone,str)
 	if phone == "Android":
 		total += 12
 	elif phone == "Apple":
@@ -70,7 +65,6 @@ def intro():
 	time.sleep(3)
 	clear()
 	ready = input('Are you Ready to play the game?\n\n[yes/no]\n\n')
-	assert isinstance(ready,str)
 	if "y" in ready.lower():
 		mainprogram()
 	elif "n" in ready.lower():

@@ -28,13 +28,11 @@ input('\n***Press any key to continue...***')
 total = 0
 clear()
 ready = input('Are you Ready to play the game? \n \n')
-assert isinstance(ready,str)
 #Begining of Game
 
 if "y" in ready.lower():
 	clear()
 	name = input('What is your name? \n \n')
-	assert isinstance(name,str)
 	clear()
 	print('Hello, ' + string.capwords(name))
 	if len(name) > 5:
@@ -42,11 +40,9 @@ if "y" in ready.lower():
 	else:
 		total += random.randint(0,5)
 	movie = input("(1/3)What is your favorite movie?" + '\n \n')
-	assert isinstance(movie,str)
 	total += random.randint(1,30)
 	clear()
 	color = input('(2/3)What is your favorite color?' + '\n \n')
-	assert isinstance(color,str)
 	clear()
 	if color.lower() == "blue":
 		print('I love the color Blue!')
@@ -58,16 +54,14 @@ if "y" in ready.lower():
 		time.sleep(2)
 	clear()
 	place = input('(3/3)What Fictional City Would you Like to Visit? \n \n')
-	assert isinstance(place,str)
 	total += random.randint(1,20)
 	phone = input('Which do you like better: Apple or Android? \n \n')
-	assert isinstance(phone,str)
 	clear()
 	if phone == "Android":
 		total += 12
 	elif phone == "Apple":
 		total += 4
-	
+	print('To Be continuted...')
 	
 	
 #Don't code below this line... Code is a dead-end past this line
