@@ -6,6 +6,7 @@ from builtins import input
 import random
 import datetime
 
+
 opsys = platform.system()
 
 #clears output
