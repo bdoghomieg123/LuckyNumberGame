@@ -61,7 +61,7 @@ if "y" in ready.lower():
 	if phone == "Android":
 		total += 12
 	elif phone == "Apple":
-		total += 4
+		total += 5
 	print('To Be continuted...')
 	
 	
