@@ -1,9 +1,8 @@
 import time
-import os
-import platform
-import sys
-import string
-from builtins import input
+import os 
+import platform 
+import string 
+from builtins import input 
 import random
 import datetime
 
@@ -61,6 +60,7 @@ if "y" in ready.lower():
 	total += random.randint(1,20)
 	phone = input('Which do you like better: Apple or Android? \n \n')
 	assert isinstance(phone,str)
+	clear()
 	if phone == "Android":
 		total += 12
 	elif phone == "Apple":
