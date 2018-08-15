@@ -20,7 +20,7 @@ def clear():
 def mainprogram():
 	clear()
 	total = 0
-	name = input('What is your name? \n \n')
+	name = input('What is your name?\n \n')
 	assert isinstance(name,str)
 	clear()
 	print('Hello, ' + string.capwords(name))
@@ -47,12 +47,15 @@ def mainprogram():
 	place = input('(3/4)What Fictional City Would you Like to Visit? \n \n')
 	assert isinstance(place,str)
 	total += random.randint(1,20)
-	phone = input('Which do you like better: Apple or Android? \n \n')
+	clear()
+	phone = input('(4/4)Which do you like better: Apple or Android? \n \n')
 	assert isinstance(phone,str)
 	if phone == "Android":
 		total += 12
 	elif phone == "Apple":
 		total += 4
+	clear()
+	print('Thank you for trying the beta... More to come soon.')
 	
 	
 	
@@ -60,13 +63,13 @@ def mainprogram():
 #Asks user if they want to play the game
 def intro():
 	clear()
-	print('Beta version:\n1.01.0\n\nIf you notice a bug, fill out an Issue report on my Github\n')
-	input('***Press any key to continue...***')
+	print('Beta version:\nv1.1\n\nIf you notice a bug, fill out an Issue report on my Github\n')
+	input('***Press any key to continue...***\n\n')
 	clear()
 	print('Hello and Welcome to the "Lucky Number Game"')
 	time.sleep(3)
 	clear()
-	ready = input('Are you Ready to play the game? \n \n')
+	ready = input('Are you Ready to play the game?\n\n[yes/no]\n\n')
 	assert isinstance(ready,str)
 	if "y" in ready.lower():
 		mainprogram()
@@ -82,7 +85,6 @@ def notready():
 	clear()
 	print('Fine have it your way')
 	time.sleep(2)
-	clear()
 	exit()
 	
 intro()

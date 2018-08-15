@@ -22,9 +22,9 @@ def restart():
 	
 clear()
 print('Hello and Welcome to the "Lucky Number Game"')
-print('\n v1.0.1')
+print('\n v1.1')
+input('\n***Press any key to continue...***')
 total = 0
-time.sleep(3)
 clear()
 ready = input('Are you Ready to play the game? \n \n')
 assert isinstance(ready,str)
@@ -59,7 +59,13 @@ if "y" in ready.lower():
 	place = input('(3/3)What Fictional City Would you Like to Visit? \n \n')
 	assert isinstance(place,str)
 	total += random.randint(1,20)
-	main()
+	phone = input('Which do you like better: Apple or Android? \n \n')
+	assert isinstance(phone,str)
+	if phone == "Android":
+		total += 12
+	elif phone == "Apple":
+		total += 4
+	
 	
 	
 #Don't code below this line... Code is a dead-end past this line
