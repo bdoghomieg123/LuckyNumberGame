@@ -16,8 +16,10 @@ def clear():
 		os.system('cls')
 
 def restart():
-	os.system('python program.py')
-		
+	if opsys == 'Linux':
+		os.system('Python3 Lucky Number (Stable).py')
+	elif opsys == 'Windows':
+		os.system('python Lucky Number (Stable).py')
 	
 clear()
 print('Hello and Welcome to the "Lucky Number Game"')
