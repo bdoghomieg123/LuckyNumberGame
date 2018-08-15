@@ -8,3 +8,12 @@ the unstable version if you're running linux, as linux by default runs the "pyth
 
 NOTE IF RUNNING LINUX: 
 run from Terminal with command "Python3" or else program will run in python2. (Only applies to Ubuntu 18.04)
+
+
+How to run:
+-Install Python3 from here: https://www.python.org/downloads/
+
+-Go into command prompt (or terminal if running linux), cd to the directory you have the program in and type "Python [name of file]"
+
+-Enjoy!
+
