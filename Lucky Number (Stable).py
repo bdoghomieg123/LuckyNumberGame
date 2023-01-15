@@ -25,13 +25,11 @@ def restart():
 clear()
 
 print('Hello and Welcome to the "Lucky Number Game"')
-print('\n v1.1')
+print('\nv0.3')
 input('\n***Press any key to continue...***')
 total = 0
 clear()
-ready = input("Are you Ready to play the game? \n \n please input 'y' or 'n' ")
-
-
+ready = input("Are you Ready to play the game? \n \nPlease input 'y' or 'n' ")
 																					
 
 if "y" in ready.lower():
@@ -39,14 +37,16 @@ if "y" in ready.lower():
 	name = input('What is your name? \n \n')
 	clear()
 	print('Hello, ' + string.capwords(name))
+	time.sleep(3)
+	clear()
 	if len(name) > 5:
 		total += random.randint(1,100)
 	else:
 		total += random.randint(0,5)
-	movie = input("(1/3)What is your favorite movie?" + '\n \n')
+	movie = input("What is your favorite movie?" + '\n \n')
 	total += random.randint(1,30)
 	clear()
-	color = input('(2/3)What is your favorite color?' + '\n \n')
+	color = input('What is your favorite color?' + '\n \n')
 	clear()
 	if color.lower() == "blue":
 		print('I love the color Blue!')
@@ -57,25 +57,28 @@ if "y" in ready.lower():
 		total -= 5
 		time.sleep(2)
 	clear()
-	place = input('(3/3)What Fictional City Would you Like to Visit? \n \n')
+	place = input('What Fictional City Would you Like to Visit? \n \n')
 	total += random.randint(1,20)
-	phone = input('Which do you like better: Apple or Android? \n \n')
 	clear()
+	phone = input('Which do you like better: Apple or Android? \n \n')
 	if phone == "Android":
 		total += 12
 	elif phone == "Apple":
 		total += 5
-	print('Content is under development. Project To Be continuted...')
-	
-	
-#Don't code below this line... Code is a dead-end past this line
+	clear()
+	print("Your Lucky number is: %s" % (total))
+	print('\n\n\n\n\n\nContent is under development. Project To Be continuted...')
+
+
+
 elif "n" in ready.lower():
 	clear()
-	print('Fine. have it your way')
-	time.sleep(2)
-	clear()
-	exit()
+	print("Alrighty then. have a nice day I guess...")
+	exit(42069)
+
+
 else:
-	print('Invalid response detected... Exiting...')
-	
-	
+	clear()
+	print("Okay? Have a nice day.")
+	time.sleep(2)
+	exit(404)
