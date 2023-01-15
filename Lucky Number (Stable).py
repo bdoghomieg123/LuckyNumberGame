@@ -23,14 +23,16 @@ def restart():
 		os.system('python Lucky Number (Stable).py')
 	
 clear()
+
 print('Hello and Welcome to the "Lucky Number Game"')
 print('\n v1.1')
 input('\n***Press any key to continue...***')
 total = 0
 clear()
-ready = input('Are you Ready to play the game? \n \n')
-#Begining of Game
+ready = input("Are you Ready to play the game? \n \n please input 'y' or 'n' ")
 
+
+																					
 
 if "y" in ready.lower():
 	clear()
@@ -63,7 +65,7 @@ if "y" in ready.lower():
 		total += 12
 	elif phone == "Apple":
 		total += 5
-	print('To Be continuted...')
+	print('Content is under development. Project To Be continuted...')
 	
 	
 #Don't code below this line... Code is a dead-end past this line
