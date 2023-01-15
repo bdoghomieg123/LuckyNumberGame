@@ -9,6 +9,11 @@ import datetime
 
 opsys = platform.system()
 
+
+
+#UNSTABLE
+
+
 #clears output
 def clear():
 	if opsys == 'Linux':
