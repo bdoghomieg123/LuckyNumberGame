@@ -6,23 +6,13 @@ import string
 from builtins import input
 import random
 import datetime
-
-opsys = platform.system()
-
+from common import *
 
 
-#UNSTABLE
 
-
-#clears output
-def clear():
-	if opsys == 'Linux':
-		os.system('clear')
-	elif opsys == 'Windows':
-		os.system('cls')
 
 #The Questions
-def mainprogram():
+def LNG():
 	clear()
 	total = 0
 	name = input('What is your name?\n \n')
@@ -32,10 +22,10 @@ def mainprogram():
 		total += random.randint(1,100)
 	else:
 		total += random.randint(0,5)
-	movie = input("(1/4)What is your favorite movie?" + '\n \n')
+	movie = input("What is your favorite movie?" + '\n \n')
 	total += random.randint(1,30)
 	clear()
-	color = input('(2/4)What is your favorite color?' + '\n \n')
+	color = input('What is your favorite color?' + '\n \n')
 	clear()
 	if color.lower() == "blue":
 		print('I love the color Blue!')
@@ -46,10 +36,10 @@ def mainprogram():
 		total -= 5
 		time.sleep(2)
 	clear()
-	place = input('(3/4)What Fictional City Would you Like to Visit? \n \n')
+	place = input('What Fictional City Would you Like to Visit? \n \n')
 	total += random.randint(1,20)
 	clear()
-	phone = input('(4/4)Which do you like better: Apple or Android? \n \n')
+	phone = input('Which do you like better: Apple or Android? \n \n')
 	if phone == "Android":
 		total += 12
 	elif phone == "Apple":
@@ -63,7 +53,7 @@ def mainprogram():
 #Asks user if they want to play the game
 def intro():
 	clear()
-	print('Beta version:\nv1.1\n\nIf you notice a bug, fill out an Issue report on my Github\n')
+	print('Beta version:\nv0.4\n\nIf you notice a bug, fill out an Issue report on my Github\n')
 	input('***Press any key to continue...***\n\n')
 	clear()
 	print('Hello and Welcome to the "Lucky Number Game"')
@@ -71,7 +61,7 @@ def intro():
 	clear()
 	ready = input('Are you Ready to play the game?\n\n[yes/no]\n\n')
 	if "y" in ready.lower():
-		mainprogram()
+		LNG()
 	elif "n" in ready.lower():
 		notready()
 	else:
