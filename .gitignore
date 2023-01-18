@@ -1,0 +1,9 @@
+
+*.vsidx
+*.lock
+.vs/LuckyNumberGame/v17/.wsuo
+*.sqlite
+.vs/slnx.sqlite
+*.pyc
+.vs/slnx.sqlite
+.vs/slnx.sqlite
