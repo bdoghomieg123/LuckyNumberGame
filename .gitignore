@@ -7,3 +7,4 @@
 *.pyc
 .vs/slnx.sqlite
 .vs/slnx.sqlite
+*.sqlite
